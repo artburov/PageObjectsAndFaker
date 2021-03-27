@@ -164,51 +164,51 @@ public class PracticeFormPage {
         return this;
     }
 
-    public PracticeFormPage ModalEmailAssert() {
+    public PracticeFormPage modalEmailAssert() {
         modalEmail.shouldHave(text(USER_EMAIL_Assert));
         return this;
     }
 
-    public PracticeFormPage ModalGenderAssert() {
+    public PracticeFormPage modalGenderAssert() {
         modalGender.shouldHave(text(USER_GENDER));
         return this;
     }
 
-    public PracticeFormPage ModalPhoneAssert() {
+    public PracticeFormPage modalPhoneAssert() {
         modalPhone.shouldHave(text(USER_PHONE_ASSERT));
         return this;
     }
 
-    public PracticeFormPage ModalUserBirthDayAssert() {
+    public PracticeFormPage modalUserBirthDayAssert() {
         modalUserBirthDay.shouldHave(text(USER_BIRTHDAY + " " + USER_BIRTHMONTH + "," + USER_BIRTHYEAR));
         return this;
     }
 
-    public PracticeFormPage ModalUserSubjectAssert() {
+    public PracticeFormPage modalUserSubjectAssert() {
         for (String subject : USER_SUBJECTS) {
             modalUserSubjects.shouldHave(text(subject));
         }
         return this;
     }
 
-    public PracticeFormPage ModalUserHobbiesAssert() {
+    public PracticeFormPage modalUserHobbiesAssert() {
         for (String hobby : USER_HOBBIES) {
             modalUserHobbies.shouldHave(text(hobby));
         }
         return this;
     }
 
-    public PracticeFormPage ModalUserImageAssert() {
+    public PracticeFormPage modalUserImageAssert() {
         modalUserImage.shouldHave(text(USER_IMAGE));
         return this;
     }
 
-    public PracticeFormPage ModalUserAddress() {
+    public PracticeFormPage modalUserAddress() {
         modalUserAddress.shouldHave(text(USER_ADDRESS_ASSERT));
         return this;
     }
 
-    public PracticeFormPage ModalStateCityAssert() {
+    public PracticeFormPage modalStateCityAssert() {
         for (String hobby : USER_STATE_CITY) {
             modalUserStateCity.shouldHave(text(hobby));
         }

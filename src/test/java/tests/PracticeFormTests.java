@@ -33,14 +33,14 @@ public class PracticeFormTests {
                 .formSubmit()
                 .modalTitleAssert()
                 .modalNameSurnameAssert()
-                .ModalEmailAssert()
-                .ModalGenderAssert()
-                .ModalPhoneAssert()
-                .ModalUserBirthDayAssert()
-                .ModalUserSubjectAssert()
-                .ModalUserHobbiesAssert()
-                .ModalUserImageAssert()
-                .ModalUserAddress()
-                .ModalStateCityAssert();
+                .modalEmailAssert()
+                .modalGenderAssert()
+                .modalPhoneAssert()
+                .modalUserBirthDayAssert()
+                .modalUserSubjectAssert()
+                .modalUserHobbiesAssert()
+                .modalUserImageAssert()
+                .modalUserAddress()
+                .modalStateCityAssert();
     }
 }
