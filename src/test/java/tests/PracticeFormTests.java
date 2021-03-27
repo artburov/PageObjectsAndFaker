@@ -1,0 +1,50 @@
+package tests;
+
+import com.codeborne.selenide.Configuration;
+import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.Test;
+import pages.PracticeFormPage;
+
+public class PracticeFormTests {
+
+    PracticeFormPage practiceFormPage = new PracticeFormPage();
+
+    @BeforeAll
+    static void setup() {
+        Configuration.startMaximized = true;
+    }
+
+
+    @Test
+    void successFillForm() {
+        practiceFormPage.openForm()
+                .setName()
+                .setSurname()
+                .setEmail()
+                .setGender()
+                .setPhone()
+                .setBirthDate()
+                .setSubjects()
+                .setHobbies()
+                .imageAdd()
+                .addressSet()
+                .userState()
+                .userCity()
+                .formSubmit();
+    }
+
+    @Test
+    void verifyFormData() {
+        practiceFormPage.modalTitleAssert()
+                .modalNameSurnameAssert()
+                .ModalEmailAssert()
+                .ModalGenderAssert()
+                .ModalPhoneAssert()
+                .ModalUserBirthDayAssert()
+                .ModalUserSubjectAssert()
+                .ModalUserHobbiesAssert()
+                .ModalUserImageAssert()
+                .ModalUserAddress()
+                .ModalStateCityAssert();
+    }
+}
