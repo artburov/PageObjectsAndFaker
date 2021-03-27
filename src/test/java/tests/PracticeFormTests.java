@@ -30,12 +30,8 @@ public class PracticeFormTests {
                 .addressSet()
                 .userState()
                 .userCity()
-                .formSubmit();
-    }
-
-    @Test
-    void verifyFormData() {
-        practiceFormPage.modalTitleAssert()
+                .formSubmit()
+                .modalTitleAssert()
                 .modalNameSurnameAssert()
                 .ModalEmailAssert()
                 .ModalGenderAssert()
